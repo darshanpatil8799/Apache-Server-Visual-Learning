@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apache on EC2: Ravi's Shop, Visualised</title>
+<meta name="description" content="Animated beginner guide: host a website with Apache HTTPD on an AWS EC2 instance. #Buildwithvinit">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Ravi opens his online shop</h1>
+    <p>Apache HTTPD on an AWS EC2 instance, in 10 animated steps</p>
+  </div>
+  <div class="top-r">
+    <span class="brand">#Buildwithvinit</span>
+    <button id="theme" type="button" aria-label="Toggle light and dark mode">Light / dark</button>
+  </div>
+</header>
+<div class="layout">
+  <nav aria-label="Steps"><ol id="steps" class="steps"></ol></nav>
+  <main>
+    <div class="controls" role="group" aria-label="Playback controls">
+      <button id="prev" type="button">Previous</button>
+      <button id="play" type="button" aria-pressed="false">Auto-play</button>
+      <button id="next" type="button">Next</button>
+      <button id="reset" type="button">Reset</button>
+      <span id="count" class="count" aria-live="polite"></span>
+    </div>
+    <ul id="legend" class="legend" aria-label="Legend of moving objects"></ul>
+    <div class="stage-wrap">
+      <div class="stage"><svg id="svg" viewBox="0 0 1100 620" role="img" aria-labelledby="svgtitle"><title id="svgtitle">Diagram of Apache HTTPD on an AWS EC2 instance</title><g id="scene"></g></svg></div>
+    </div>
+    <section class="card" aria-live="polite">
+      <h2 id="c-title"></h2>
+      <h3>In plain words</h3><p id="c-plain"></p>
+      <h3>Technical explanation</h3><p id="c-tech"></p>
+      <h3>Commands</h3><pre id="c-cmd"></pre>
+      <h3>Watch the picture</h3><p id="c-watch"></p>
+    </section>
+  </main>
+</div>
+<footer class="foot">Made with care. #Buildwithvinit</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
